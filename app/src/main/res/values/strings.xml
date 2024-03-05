@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">elgarra</string>
+    <string name="copyright">®POKÉDEX - elgarra</string>
+    <string name="login">POKÉDEX</string>
+    <string name="user">Usuario:</string>
+    <string name="password">Contraseña:</string>
+</resources>
