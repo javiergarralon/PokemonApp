@@ -25,12 +25,12 @@
             android:id="@+id/tvPokemonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:textColor="@color/black"
-            android:textStyle="bold"
+            android:fontFamily="@font/pokefont"
             app:layout_constraintBottom_toBottomOf="@id/ivPokemonPhoto"
             app:layout_constraintEnd_toEndOf="@id/ivPokemonPhoto"
             app:layout_constraintStart_toStartOf="@id/ivPokemonPhoto"
+            android:textSize="24dp"
             tools:text="Nombre Pokemon" />
 
         <TextView
@@ -38,18 +38,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textColor="@color/black"
-            android:textStyle="bold"
+            android:fontFamily="@font/pokefont"
             app:layout_constraintStart_toStartOf="@id/ivPokemonPhoto"
             app:layout_constraintTop_toTopOf="@id/ivPokemonPhoto"
+            android:textSize="24dp"
             tools:text="000" />
 
         <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
             android:src="@drawable/ic_pokeball"
             app:layout_constraintEnd_toEndOf="@id/ivPokemonPhoto"
             app:layout_constraintTop_toTopOf="@id/ivPokemonPhoto" />
