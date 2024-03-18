@@ -3,7 +3,6 @@
     <style name="Base.Theme.DevelopedWithKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/poke_red</item>
-        <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.DevelopedWithKotlin" parent="Base.Theme.DevelopedWithKotlin" />
@@ -26,5 +25,16 @@
     <style name="Little">
         <item name="android:fontFamily">@font/pokefont</item>
         <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/pokefont</item>
+        <item name="android:textColorHint">@color/poke_white</item>
+        <item name="android:editTextColor">@color/poke_white</item>
+        <item name="android:textColorPrimary">@color/poke_white</item>
+        <item name="android:textColorSecondary">@color/poke_white</item>
+        <item name="android:tint">@color/poke_white</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>

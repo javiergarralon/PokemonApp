@@ -8,6 +8,16 @@
     tools:context=".ui.view.PokemonInfoActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGoBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_margin="20dp"
+        android:tint="@color/poke_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivPokeball"
         android:layout_width="100dp"
         android:layout_height="100dp"

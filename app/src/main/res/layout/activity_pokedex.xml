@@ -12,17 +12,38 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:imeOptions="actionDone"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"
+        android:theme="@style/SearchViewStyle"
+        app:closeIcon="@drawable/ic_close"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        app:searchIcon="@drawable/ic_search" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPokedex"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tvCopyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/svPokemonFilter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCopyright"
+        style="@style/Little"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:shadowColor="@color/poke_black"
+        android:shadowDx="8"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        android:text="@string/copyright"
+        android:textColor="@color/poke_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"

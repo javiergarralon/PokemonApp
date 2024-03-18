@@ -19,6 +19,15 @@ class PokemonInfoActivity : AppCompatActivity() {
         binding = ActivityPokemonInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initUI()
+    }
+
+    private fun initUI() {
+        initListener()
+        initIntent()
+    }
+
+    private fun initIntent() {
         val intent = intent
         val pokemonJson = intent.getStringExtra("pokemonJson")
 
@@ -26,7 +35,7 @@ class PokemonInfoActivity : AppCompatActivity() {
             val gson = Gson()
             pokemon = gson.fromJson(pokemonJson, Pokemon::class.java)
 
-            binding.tvId.text = pokemon.id.padStart(3,'0')
+            binding.tvId.text = pokemon.id.padStart(3, '0')
             binding.tvName.text = pokemon.name.replaceFirstChar { it.titlecase() }
             binding.tvHeight.text = "Altura: ${toDecimals(pokemon.height)}m"
             binding.tvWeight.text = "Peso: ${toDecimals(pokemon.weight)}kg"
@@ -35,5 +44,9 @@ class PokemonInfoActivity : AppCompatActivity() {
             Picasso.get().load(pokemon.sprites.front_shiny).into(binding.ivFrontShiny)
             Picasso.get().load(pokemon.sprites.back_shiny).into(binding.ivBackShiny)
         }
+    }
+
+    private fun initListener() {
+        binding.ivGoBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
 }

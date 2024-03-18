@@ -66,9 +66,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:imeOptions="actionDone"
                 android:inputType="text"
                 android:maxLength="30"
                 android:maxLines="1"
+
                 android:textColor="@color/dark_grey"
                 tools:text="@string/user" />
 
@@ -83,9 +85,11 @@
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPassword"
                 style="@style/Body"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:textColor="@color/dark_grey"
@@ -121,7 +125,7 @@
         style="@style/Little"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:padding="15dp"
         android:shadowColor="@color/poke_black"
         android:shadowDx="8"
         android:shadowDy="4"
