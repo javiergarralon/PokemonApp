@@ -1,16 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.DevelopedWithKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/poke_black</item>
-        <item name="colorPrimaryVariant">@color/black</item>
-        <item name="colorOnPrimary">@color/poke_white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/poke_black</item>
-        <item name="colorSecondaryVariant">@color/black</item>
-        <item name="colorOnSecondary">@color/poke_white</item>
+    <style name="Base.Theme.DevelopedWithKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:statusBarColor">@color/poke_red</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.DevelopedWithKotlin" parent="Base.Theme.DevelopedWithKotlin" />
+
+    <style name="Title1">
+        <item name="android:fontFamily">@font/pokefont</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="Title2">
+        <item name="android:fontFamily">@font/pokefont</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:fontFamily">@font/pokefont</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="Little">
+        <item name="android:fontFamily">@font/pokefont</item>
+        <item name="android:textSize">12dp</item>
     </style>
 </resources>

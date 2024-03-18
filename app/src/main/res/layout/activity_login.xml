@@ -10,17 +10,17 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_margin="20dp"
         android:src="@drawable/ic_pokeball"
         app:layout_constraintBottom_toTopOf="@+id/cvBlack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBlack"
         android:layout_width="365dp"
-        android:layout_height="355dp"
+        android:layout_height="385dp"
         app:cardBackgroundColor="@color/poke_black"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
-        android:layout_height="340dp"
+        android:layout_height="370dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -44,26 +44,25 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Title1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:fontFamily="@font/pokefont"
                 android:text="@string/login"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="50dp" />
+                android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/pokefont"
                 android:text="@string/user"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etUser"
+                style="@style/Body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -71,27 +70,25 @@
                 android:maxLength="30"
                 android:maxLines="1"
                 android:textColor="@color/dark_grey"
-                android:textSize="20dp"
                 tools:text="@string/user" />
 
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/pokefont"
                 android:text="@string/password"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPassword"
+                style="@style/Body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:textColor="@color/dark_grey"
-                android:textSize="20dp"
                 tools:text="@string/password" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -101,7 +98,6 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_margin="20dp"
         android:background="@drawable/ic_play"
         android:backgroundTint="@color/poke_black"
         app:layout_constraintBottom_toBottomOf="@id/bLogin"
@@ -113,18 +109,19 @@
         android:id="@+id/bLogin"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_margin="20dp"
         android:background="@drawable/ic_play"
         android:backgroundTint="@color/poke_white"
+        app:layout_constraintBottom_toTopOf="@id/tvCopyright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvBlack" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCopyright"
+        style="@style/Little"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="@font/pokefont"
+        android:layout_margin="15dp"
         android:shadowColor="@color/poke_black"
         android:shadowDx="8"
         android:shadowDy="4"
