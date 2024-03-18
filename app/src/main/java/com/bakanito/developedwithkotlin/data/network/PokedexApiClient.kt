@@ -1,7 +1,7 @@
 package com.bakanito.developedwithkotlin.data.network
 
-import com.bakanito.developedwithkotlin.data.response.PokedexResponse
-import com.bakanito.developedwithkotlin.data.response.PokemonResponse
+import com.bakanito.developedwithkotlin.data.network.response.PokedexResponse
+import com.bakanito.developedwithkotlin.data.network.response.PokemonResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Url

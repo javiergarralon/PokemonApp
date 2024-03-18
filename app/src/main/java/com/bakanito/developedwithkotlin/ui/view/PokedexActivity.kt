@@ -3,6 +3,8 @@ package com.bakanito.developedwithkotlin.ui.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
 import androidx.appcompat.widget.SearchView.OnQueryTextListener
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
@@ -44,10 +46,28 @@ class PokedexActivity : AppCompatActivity(), OnQueryTextListener {
 
         pokedexViewModel.pokedex.observe(this, Observer {
             pokedex = it as MutableList<Pokemon>
-            adapter.updatePokedex(pokedex)
+            showPokedex()
         })
 
 
+    }
+
+    private fun showPokedex() {
+        val appearAnimation = AlphaAnimation(0.0f, 1.0f)
+        appearAnimation.duration = 1000
+
+        appearAnimation.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationStart(animation: Animation?) {
+                adapter.updatePokedex(pokedex)
+            }
+
+            override fun onAnimationEnd(animation: Animation?) {}
+
+            override fun onAnimationRepeat(animation: Animation?) {}
+
+        })
+
+        binding.rvPokedex.startAnimation(appearAnimation)
     }
 
     private fun initRecyclerView() {

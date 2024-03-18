@@ -1,4 +1,4 @@
-package com.bakanito.developedwithkotlin.data.response
+package com.bakanito.developedwithkotlin.data.network.response
 
 import com.google.gson.annotations.SerializedName
 

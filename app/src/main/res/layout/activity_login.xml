@@ -8,6 +8,7 @@
     tools:context=".ui.view.LoginActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPokeball"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/ic_pokeball"
@@ -29,6 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvWhite"
         android:layout_width="350dp"
         android:layout_height="370dp"
         app:cardCornerRadius="20dp"
@@ -41,7 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/containerLogin">
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/Title1"
@@ -66,7 +69,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:imeOptions="actionDone"
                 android:inputType="text"
                 android:maxLength="30"
                 android:maxLines="1"
@@ -100,6 +102,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bLoginBackground"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:background="@drawable/ic_play"
@@ -126,10 +129,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:shadowColor="@color/poke_black"
-        android:shadowDx="8"
-        android:shadowDy="4"
-        android:shadowRadius="1"
         android:text="@string/copyright"
         android:textColor="@color/poke_white"
         app:layout_constraintBottom_toBottomOf="parent"

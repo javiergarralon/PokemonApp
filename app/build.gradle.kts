@@ -44,23 +44,31 @@ dependencies {
 
     // Fragment
     implementation("androidx.fragment:fragment-ktx:1.3.2")
+
     // Activity
     implementation("androidx.activity:activity-ktx:1.2.2")
+
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
+
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.3.1")
+
     //Corrutinas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6")
+
     //Dagger Hilt
     //implementation("com.google.dagger:hilt-android:2.50")
     //kapt("com.google.dagger:hilt-android-compiler:2.50")
     var hilt_version = "2.48"
     implementation("com.google.dagger:hilt-android:$hilt_version")
     ksp("com.google.dagger:hilt-android-compiler:$hilt_version")
+
     //Room
     var room_version = "2.4.0"
     //implementation("androidx.room:room-runtime:2.4.0")
@@ -68,8 +76,10 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
     ksp("androidx.room:room-compiler:$room_version")
+
     //Piscasso
     implementation("com.squareup.picasso:picasso:2.71828")
+
     //Gson
     implementation("com.google.code.gson:gson:2.8.9")
 

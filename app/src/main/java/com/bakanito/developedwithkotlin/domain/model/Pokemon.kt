@@ -2,7 +2,7 @@ package com.bakanito.developedwithkotlin.domain.model
 
 import com.bakanito.developedwithkotlin.data.database.entities.PokemonEntity
 import com.bakanito.developedwithkotlin.data.model.PokemonModel
-import com.bakanito.developedwithkotlin.data.response.SpriteResponse
+import com.bakanito.developedwithkotlin.data.network.response.SpriteResponse
 import java.io.Serializable
 
 data class Pokemon(
